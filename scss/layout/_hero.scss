@@ -17,12 +17,18 @@
 .hero__title {
   color: var(--white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36em;
+  // font-size: 44px;
+  // line-height: 1.36em;
+  font-size: 26px;
+  line-height: cal(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 650px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: cal(60 / 44);
+  }
 }
