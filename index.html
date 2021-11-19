@@ -22,7 +22,7 @@
   </head>
   <!--Шапка сайту-->
   <body>
-    <!--<header class="page-header">
+    <header class="page-header">
       <div class="container page-header__container">
         <nav class="page-header__nav">
           <a class="logo page-header__logo" href="./index.html"
@@ -84,7 +84,7 @@
           </li>
         </ul>
       </div>
-    </header>-->
+    </header>
     <!--Головне сторінки-->
     <main>
       <section class="hero">
@@ -153,7 +153,7 @@
       </section>
       <!--Чем ми займаємось-->
 
-      <!-- <section class="section">
+      <section class="section section-none-mob">
         <div class="container">
           <h2 class="section-photo">Чем мы занимаемся</h2>
           <ul class="section-photo__item-photo">
@@ -192,15 +192,15 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
       <!--Наша команда-->
-      <!-- <section class="section section-team">
+      <section class="section section-team">
         <div class="container">
           <h2 class="section-team__heading-photo">Наша команда</h2>
           <ul class="item-photo">
             <li class="item-photo__profession-photo">
-              <img src="./images/img1.jpg" alt="команда" width="270" />
+              <img src="./images/img1.jpg" alt="команда" />
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Игорь Демьяненко</h3>
                 <p class="item-photo__profession">Product Designer</p>
@@ -254,7 +254,7 @@
             </li>
 
             <li class="item-photo__profession-photo">
-              <img src="./images/img2.jpg" alt="команда" width="270" />
+              <img src="./images/img2.jpg" alt="команда" />
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Ольга Репина</h3>
                 <p class="item-photo__profession">Frontend Developer</p>
@@ -308,7 +308,7 @@
             </li>
 
             <li class="item-photo__profession-photo">
-              <img src="./images/img3.jpg" alt="команда" width="270" />
+              <img src="./images/img3.jpg" alt="команда" />
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Николай Тарасов</h3>
                 <p class="item-photo__profession">Marketing</p>
@@ -362,7 +362,7 @@
             </li>
 
             <li class="item-photo__profession-photo">
-              <img src="images/img4.jpg" alt="команда" width="270" />
+              <img src="images/img4.jpg" alt="команда" />
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Михаил Ермаков</h3>
                 <p class="item-photo__profession">UI Designer</p>
@@ -416,9 +416,9 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <!--Постоянные клиенты-->
-      <!-- <section class="section section-client">
+      <section class="section section-client">
         <div class="container">
           <h2 class="section-client__sc-client">Постоянные клиенты</h2>
           <ul class="section-client__client-link">
@@ -495,67 +495,70 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
     </main>
     <!--Футер-->
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container footer-link">
         <div class="footer-container">
-          <a class="logo-footer" href="./index.html"
-            ><span class="colortext">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul>
-              <li class="footer-mil">
-                <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
-              </li>
+          <div class="footer-address">
+            <a class="logo-footer" href="./index.html"
+              ><span class="colortext">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul>
+                <li>
+                  <p class="address-footer">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
 
-              <li class="footer-mil">
-                <a class="contacts" href="meilto:info@devstudio.com"
-                  >info@devatudio.com</a
-                >
-              </li>
+                <li class="footer-mil">
+                  <a class="contacts" href="meilto:info@devstudio.com"
+                    >info@devatudio.com</a
+                  >
+                </li>
 
+                <li>
+                  <a class="contacts" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social">
+            <h3 class="footer-title">присоединяйтесь</h3>
+            <ul class="footer-social">
               <li>
-                <a class="contacts" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a href="" class="ft-social-link"
+                  ><svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="ft-social-link"
+                  ><svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="ft-social-link"
+                  ><svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook-3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="ft-social-link"
+                  ><svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin-4"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social">
-          <h3 class="footer-title">присоединяйтесь</h3>
-          <ul class="footer-social">
-            <li>
-              <a href="" class="ft-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="ft-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="ft-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="ft-social-link"
-                ><svg class="footer-social-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin-4"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-wrapper">
           <h3 class="footer-title">Подпишитесь на рассылку</h3>
@@ -579,7 +582,7 @@
           </span>
         </div>
       </div>
-    </footer>-->
+    </footer>
     <!--мадалка-->
     <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">

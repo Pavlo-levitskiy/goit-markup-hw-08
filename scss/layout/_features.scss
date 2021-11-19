@@ -1,5 +1,7 @@
 .features {
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .section-text {
@@ -24,6 +26,16 @@
 
 .section-text__list-text:not(:last-child) {
   margin-bottom: 30px;
+}
+.section-text__list-text:nth-last-child(-n + 2) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+.section-text__list-text:nth-last-child(-n + 4) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .section-text__list-text {
