@@ -18,20 +18,18 @@
 .section-client__client-link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -30px;
 }
 
-.section-client__client:last-child {
-  margin-right: 0;
-}
 .section-client__client {
   margin-top: 30px;
-  flex-basis: calc((100% - 15px * 2) / 2);
+  margin-left: 30px;
+  flex-basis: calc(100% / 2 - 30px);
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 15px * 3) / 3);
+    flex-basis: calc(100% / 3 - 30px);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 15px * 6) / 6);
+    flex-basis: calc(100% / 6 - 30px);
     margin-top: 0px;
   }
 }

@@ -3,11 +3,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 530px;
-  min-height: 580px;
+  width: 100%;
+  min-height: 609px;
   background: var(--white-color);
   border-radius: 4px;
   padding: 40px;
+  @media screen and (min-width: 450px) {
+    width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 530px;
+    min-height: 580px;
+  }
 }
 
 .btn-close {
@@ -26,10 +34,15 @@
 
 .modal-title {
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+  color: var(--primery-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 .fotm-fied {
@@ -89,14 +102,18 @@
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--grey);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .form-checkdox:checked + .check-text > .check-item {
@@ -116,11 +133,15 @@
 }
 
 .href-text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--blue);
-  margin-left: 10px;
+  margin-left: 5px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .form-btn {

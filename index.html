@@ -51,6 +51,11 @@
             </li>
           </ul>
         </nav>
+        <button class="open-btn" data-menu-open type="button">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#mob-menu"></use>
+          </svg>
+        </button>
         <ul class="header-contacts">
           <li>
             <a
@@ -83,6 +88,56 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <div class="backdrop is-hidden" data-menu>
+        <div class="mob-menu">
+          <button class="mob-menu-btn-close" data-menu-close type="button">
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#mob-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link">Студия</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link">Портфолио</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="mob-menu-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-tel-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-meilto" href="meilto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-social">
+              <li class="mob-menu-social-item mob-menu-lyre">
+                <a href="" class="mob-menu-social-link">Instagram</a>
+              </li>
+              <li class="mob-menu-social-item mob-menu-lyre">
+                <a href="" class="mob-menu-social-link">Twitter</a>
+              </li>
+              <li class="mob-menu-social-item mob-menu-lyre">
+                <a href="" class="mob-menu-social-link">Facebook</a>
+              </li>
+              <li class="mob-menu-social-item">
+                <a href="" class="mob-menu-social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!--Головне сторінки-->
@@ -158,34 +213,52 @@
           <h2 class="section-photo">Чем мы занимаемся</h2>
           <ul class="section-photo__item-photo">
             <li class="card">
-              <img
-                src="./images/photo1.jpg"
-                alt="фото1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/photo1.jpg"
+                  alt="фото1"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="card__text-photo">
                 <p>Десктопные приложения</p>
               </div>
             </li>
             <li class="card">
-              <img
-                src="./images/photo2.jpg"
-                alt="фото2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/photo2.jpg"
+                  alt="фото1"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="card__text-photo">
                 <p>Мобильные приложения</p>
               </div>
             </li>
             <li class="card">
-              <img
-                src="./images/photo3.jpg"
-                alt="фото3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/photo3.jpg"
+                  alt="фото1"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="card__text-photo">
                 <p>Дизайнерские решения</p>
               </div>
@@ -200,7 +273,31 @@
           <h2 class="section-team__heading-photo">Наша команда</h2>
           <ul class="item-photo">
             <li class="item-photo__profession-photo">
-              <img src="./images/img1.jpg" alt="команда" />
+              <picture>
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img1-tab-1x.jpg 1x,
+                    ./images/img1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/img1-tab-1x.jpg 1x,
+                    ./images/img1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="./images/img1.jpg" alt="команда" />
+              </picture>
+
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Игорь Демьяненко</h3>
                 <p class="item-photo__profession">Product Designer</p>
@@ -252,9 +349,29 @@
                 </ul>
               </div>
             </li>
-
             <li class="item-photo__profession-photo">
-              <img src="./images/img2.jpg" alt="команда" />
+              <picture>
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-tab-1x.jpg 1x,
+                    ./images/img2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-tab-1x.jpg 1x,
+                    ./images/img2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img2.jpg" alt="команда" />
+              </picture>
+
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Ольга Репина</h3>
                 <p class="item-photo__profession">Frontend Developer</p>
@@ -306,9 +423,28 @@
                 </ul>
               </div>
             </li>
-
             <li class="item-photo__profession-photo">
-              <img src="./images/img3.jpg" alt="команда" />
+              <picture>
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-tab-1x.jpg 1x,
+                    ./images/img3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-tab-1x.jpg 1x,
+                    ./images/img3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/img3.jpg" alt="команда" />
+              </picture>
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Николай Тарасов</h3>
                 <p class="item-photo__profession">Marketing</p>
@@ -360,9 +496,29 @@
                 </ul>
               </div>
             </li>
-
             <li class="item-photo__profession-photo">
-              <img src="images/img4.jpg" alt="команда" />
+              <picture>
+                <source
+                  srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-tab-1x.jpg 1x,
+                    ./images/img4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-tab-1x.jpg 1x,
+                    ./images/img4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="images/img4.jpg" alt="команда" />
+              </picture>
+
               <div class="item-photo__wrapper">
                 <h3 class="item-photo__photo">Михаил Ермаков</h3>
                 <p class="item-photo__profession">UI Designer</p>
@@ -584,7 +740,7 @@
       </div>
     </footer>
     <!--мадалка-->
-    <!--<div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" data-modal-close>
           <svg width="11" height="11">
@@ -661,6 +817,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
